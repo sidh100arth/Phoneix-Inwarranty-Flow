@@ -5,8 +5,8 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron : '30 9 * * *'
-    - cron : '15 10 * * 1-4'
+    - cron : '30 9 * * 0'
+    - cron : '15 10 * * 0'
 
 jobs:
   run-postman-tests:

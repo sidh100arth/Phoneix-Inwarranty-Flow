@@ -55,9 +55,16 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
+          username: ${{ secrets.EMAIL_NAME }}
+          password: ${{ secrets.PAGES_MAIL }}
+          subject: Phoenix Inwarranty Flow Test Execution Notification
+          to: sharmapunit11699@gmail.com
+          from: ${{ secrets.EMAIL_NAME }}
+          body: |
+                  Hi,
+                   The report has been completed and the URL is :
+                   https://sidh100arth.github.io/Phoneix-Inwarranty-Flow/
           
-
-
 
 
 

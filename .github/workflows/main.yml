@@ -10,7 +10,7 @@ on:
 
 jobs:
   run-postman-tests:
-    runs-on: Github-Runner #ubuntu-latest
+    runs-on: ec2-runner #ubuntu-latest
     steps:
       - name: Checkout the code
         uses: actions/checkout@v6.0.0
